@@ -38,7 +38,7 @@ A nivel de estructura, existen:
   const getTotals = (subtotal, tax) => subtotal + tax
   ````
 Las funciones pueden recibir argumentos en forma de parámetros, y retornar datos. A efectos del retorno:
-- Sólo pueden retornar un único valor,  `undefined` si carecen de retorno.
+- Sólo pueden retornar un único valor, o `undefined` si carecen de retorno.
 - Un retorno en una función supone detener su ejecución.
 - Las _arrow function_ carentes de bloque disponen de retorno por defecto.
 
