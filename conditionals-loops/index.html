@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+
+        // const userAge = prompt("¿Cuál es tu edad?")
+
+        // if (userAge > 0 && userAge <= 15) {
+        //     console.log("Tienes un descuento joven del 15% yay")
+        // }
+
+        // if (userAge >= 16 && userAge <= 55) {
+        //     console.log("Sin descuento, merluzo")
+        // }
+
+        // if (userAge >= 56) {
+        //     console.log("Tienes un descuento Senior de 45%")
+        // }
+
+        // console.log("Gracias por tu consulta")
+
+
+
+
+
+
+
+
+        // // Ejemplo mejorado
+        // const userAge = prompt("¿Cuál es tu edad?")
+
+        // if (userAge > 0 && userAge <= 15) {
+
+        //     console.log("Tienes un descuento joven del 15% yay")
+
+        // } else if (userAge <= 55) {
+
+        //     console.log("Sin descuento, merluzo")
+
+        // } else {
+
+        //     console.log("Tienes un descuento Senior de 45%")
+        // }
+
+        // console.log("Gracias por tu consulta")
+
+
+
+
+
+
+
+        // // Estructuras de control anidadas
+        // const userCard = confirm("¿Tienes tarjeta de socio")
+
+        // if (userCard === true) {
+
+        //     // parseInt() convierte a tipo numérico entero
+        //     const userAge = parseInt(prompt("¿Cuál es tu edad?"))
+
+        //     if (userAge > 0 && userAge <= 15) {
+
+        //         console.log("Tienes un descuento joven del 15% yay")
+
+        //     } else if (userAge <= 55) {
+
+        //         console.log("Sin descuento, merluzo")
+
+        //     } else {
+
+        //         console.log("Tienes un descuento Senior de 45%")
+        //     }
+
+        // } else {
+
+        //     console.log("Hazte socio para tener decsuentos, agarrado")
+        // }
+
+        // console.log("Gracias por participar")
+
+
+
+
+
+
+
+        // // Estructura condicional anidada
+        // const number1 = parseInt(prompt("First number:"));
+        // const number2 = parseInt(prompt("Second number:"));
+
+        // if (number1 === number2) {
+        //     console.log("The numbers are equal.");
+        // } else {
+        //     if (number1 > number2) {
+        //         console.log("Number 1 is bigger than number 2.");
+        //     } else {
+        //         console.log("Number 1 is smaller than number 2.");
+        //     }
+        // }
+
+
+
+
+
+        // const method = prompt('Indica un método del objeto string para obtener su descripción')
+        // const lowerMethod = method.toLowerCase()
+
+        // switch (lowerMethod) {
+        //     case "repeat":
+        //         console.log("El método repite un string")
+        //         break
+        //     case "substring":
+        //     case "substr":
+        //     case "slice":
+        //         console.log("El método retorna una sección del string")
+        //         break
+        //     default:
+        //         console.log(`Método "${method}" no registrado en el sistema...`)
+        // }
+
+        // console.log("Gracias por participar")
+
+
+
+
+
+
+
+
+
+        // const VAT = prompt('Indica el IVA aplicable')
+        // const subtotal = prompt('Indica el subtotal aplicable')
+        // let tax
+
+        // switch (VAT.toLowerCase()) {
+        //     case "general":
+        //     case "gral":
+        //         tax = 1.21
+        //         break
+
+        //     case "reducido":
+        //         tax = 1.1
+        //         break
+
+        //     case "exento":
+        //         tax = 1
+        //         break
+
+        //     default:
+        //         tax = 1
+        // }
+
+        // console.log(`El total asciende a ${subtotal * tax} euretes`)
+
+
+
+
+
+        // let i = 0
+
+        // while (i <= 100) {
+        //     console.log(i)
+        //     i++
+        // }
+
+
+
+
+
+        // let value = 0
+        // while (value < 10) {
+        //     value = prompt('Indica un valor mayor de 10...')
+        // }
+        // console.log('gracias y adios')
+
+
+
+
+
+
+        // // Bucle invertido
+        // const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        // for (let i = lorem.length - 1; i >= 0; i--) {
+        //     console.log(`La letra actual es ${lorem[i]}`)
+        // }
+        // console.log("Estructura abandonada")
+
+
+
+
+
+
+
+        // Palabras reservadas 'break' y 'continue'
+        const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, culpa? Consectetur explicabo autem similique ipsa deleniti delectus cupiditate non qui? Itaque eum esse adipisci enim qui, repudiandae amet consequuntur cumque."
+        for (let i = 0; i <= lorem.length; i++) {
+
+            if (lorem[i] === 'o') {
+                continue    // omite el resto de instrucciones en la iteración presente
+            }
+
+            if (lorem[i] === 'p') {
+                break       // omite el resto de instrucciones e iteraciones (abandona la estructura)
+            }
+
+            console.log(`La letra actual es ${lorem[i]}`)
+        }
+
+        console.log("Iteración  finalizada")
+
+    </script>
+</body>
+
+</html>

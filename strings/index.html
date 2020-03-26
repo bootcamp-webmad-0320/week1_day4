@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+
+<body>
+
+    <script>
+
+        const scapedChars = "Me llaman en el campus \"Ger\""
+
+        // Longitud de un string
+        console.log(`La longitud del string es de ${scapedChars.length}`)
+
+        // Obtener caracter en índice
+        const charaterSelected = scapedChars.charAt(3)
+        const charaterSelectedByIndex = scapedChars[3]
+        console.log(`El caracter que se encuentra en el índice 3 es ${charaterSelected}`)
+        console.log(`El caracter que se encuentra en el índice 3 es ${charaterSelectedByIndex}`)
+
+        // Obtener índice de un caracter
+        const indexOfChars1 = scapedChars.indexOf('man')
+        const indexOfChars2 = scapedChars.indexOf('a', 8)       // Dos argumentos: busca a partir del índice argumentado en segudno lugar
+        console.log(`los carateres 'tud' se encuentran en el índice ${indexOfChars1}`)
+        console.log(`los carateres 'a' se encuentran en el índice ${indexOfChars2}`)
+
+        // Obtener una sección de un string
+        const substring1 = scapedChars.substring(2, 9)
+        const substring2 = scapedChars.substr(2, 9)
+        const substring3 = scapedChars.slice(-5, -1)
+        console.log(`La pieza de texto extraída es '${substring1}'`)
+        console.log(`La pieza de texto extraída es '${substring2}'`)
+        console.log(`La pieza de texto extraída es '${substring3}'`)
+
+    </script>
+</body>
+
+</html>

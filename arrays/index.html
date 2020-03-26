@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js</title>
+</head>
+
+<body>
+    <script>
+
+        const drinks = ['coca-cola', 'agua', 'fanta', 'monster', 'cacolat', 'jagger']
+
+        console.log(drinks[6])      // acceso getter
+
+        drinks[3] = 'red bull'      // acceso setter
+
+        console.log(drinks)
+
+        // Añadir una nueva posición I
+        drinks[6] = 'Choco Ballantines'
+        console.log(drinks)
+
+        // Añadir una nueva posición II
+        drinks[drinks.length] = 'Kaiku'
+        console.log(drinks)
+
+        // Añadir una nueva posición III
+        drinks.push('Bifrutas')
+        console.log(drinks)
+
+        // Añadir una nueva posición IV
+        drinks.unshift('Nestea')
+        console.log(drinks)
+
+
+        // Eliminar posiciones I - array.splice(startIndex, deleteCount)
+        // .shift(), .pop() también eliminann posiciones
+        drinks.splice(0, 1)
+        console.log(drinks)
+
+
+
+
+        // // Iteración mediante bucle for
+        // for (let i = 0; i < drinks.length; i++) {
+        //     console.log(`Bebida ${drinks[i]} regisdtrada en el sistema`)
+        // }
+
+        // // Iteración mediante método .forEach()
+        // drinks.forEach(function (elm) {
+        //     console.log(`Bebida ${elm} regisdtrada en el sistema`)
+        // })
+
+        // // Equivalencia con arrow function
+        drinks.forEach(elm => console.log(`Bebida ${elm} regisdtrada en el sistema`))
+
+
+
+
+        // método .split() 
+        const loremText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat nam? In architecto iste dignissimos nulla veniam perspiciatis eum incidunt officia consequatur, quo laborum, esse eveniet laudantium natus est doloremque!'
+        const loremTextWords = loremText.split(' ')
+        console.log(loremTextWords)
+
+
+
+
+        // // Práctica: capitaliza la frase
+        // const loremText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat nam? In architecto iste dignissimos nulla veniam perspiciatis eum incidunt officia consequatur, quo laborum, esse eveniet laudantium natus est doloremque!'
+        // const loremTextWords = loremText.split(' ')
+        // let finalText = ''
+
+        // loremTextWords.forEach(function (elm) {
+
+        //     let firstLetter = elm.charAt(0).toUpperCase()
+        //     let rest = elm.substring(1)
+        //     let finalWord = firstLetter + rest
+
+        //     finalText += finalWord + ' '
+        // })
+
+        // console.log('El texto capitalizado es:', finalText)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+
+        // // Declaración function statement
+        // function sayHi() {
+        //     const text = 'Hola, Germán Álvarez'
+        //     console.log(text)
+        // }
+
+        // // Invocación
+        // sayHi()
+
+
+
+
+        // // Declaración equivalente arrow Fn (si dispone de más de una instrucción requiere bloque)
+        // const sayHi = () => {
+        //     const text = 'Hola, Germán Álvarez'
+        //     console.log(text)
+        // }
+
+        // // Invocación
+        // sayHi()
+
+
+
+
+
+        // // Declaración con parámetros
+        // function sayHi(name, surname) {
+        //     console.log(`Hola me llamo ${name} ${surname}`)
+        // }
+
+        // // Invocación con argumentos        
+        // sayHi('Germán', 'Álvarez')
+        // sayHi('Héctor', 'Álvarez')
+
+
+        // // Alternativa
+        // const sayHi = (name, surname) => console.log(`Hola me llamo ${name} ${surname}`)
+
+
+
+
+
+
+
+
+
+        // // Los parámetros no argumentaods son indefinidos (pero pueden tener valor default)
+        // function sayHi(name, surname, hair = 'DESCONOCIDO') {
+        //     console.log(`Hola me llamo ${name} ${surname} y mi color de pelo es ${hair}`)
+        // }
+
+        // sayHi('Germán', 'Álvarez', 'castaño')
+        // sayHi('Héctor', 'Álvarez')
+
+
+        // // Equivalencia
+        // const sayHi = (name, surname, hair = 'DESCONOCIDO') => console.log(`Hola me llamo ${name} ${surname} y mi color de pelo es ${hair}`)
+
+
+
+
+        // // Retorno de valores (ejemplo I)
+        // const composeGreeting = (name, surname, hair = 'DESCONOCIDO') => {
+        //     const result = `Hola me llamo ${name} ${surname} y mi color de pelo es ${hair}`
+        //     return result
+        // }
+
+        // const fullRext = composeGreeting('Germán', 'Álvarez', 'rizado')
+        // console.log(fullRext)
+
+
+
+
+
+
+        // // Retorno de valores (ejemplo II)
+        // function getTotal(subtotal, tax) {
+        //     return subtotal *= tax
+        // }
+
+        // // Equivalencia: si una Arrow Fn tiene una única instrucción de retorno, no requere ni bloque ni return
+        // const getTotal = (subtotal, tax) => subtotal *= tax
+
+        // const estimate1 = getTotal(100, 1.1)
+        // console.log("El precio final es de ", estimate1)
+
+
+
+
+
+
+
+
+        // // Una función puede retornar un único dato
+        // // Un return en una función supone su abandono inmediato, detiene su ejecución
+        // const getTotal = (subtotal, tax) => {
+
+        //     if (typeof subtotal != 'number' || typeof tax != 'number') {
+        //         return 'ERROR: Tipos de datos inválidos'
+        //     }
+
+        //     return subtotal *= tax
+        // }
+
+
+
+        // const estimate1 = getTotal(100, 1.1)
+        // const estimate2 = getTotal('cien', 1.1)
+        // console.log("El precio final primero es de ", estimate1)
+        // console.log("El precio final segundo es de ", estimate2)
+
+
+
+
+        // // El método .random() del objeto global Math retorna un valor aleatorio 0-1
+        // console.log(Math.random())
+
+
+
+
+
+        // // El scope global es al que pertenecen las variables declaradas fuera de bloques, accesibles desde todo el script
+        // const globalScope = true
+        // function whatever() {
+        //     // El scope local es al que pertenecen las variables declaradas dentro de bloques
+        //     const localVariable = true
+        // }
+
+        // console.log(globalScope)
+        // console.log(localVariable)  // error
+
+
+    </script>
+</body>
+
+</html>
