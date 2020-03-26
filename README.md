@@ -14,8 +14,18 @@
 A nivel de nomenclatura, existen:
 
 - **Funciones nominales**: disponen de declaración e invocación, con alta reusabilidad.
+  ````javascript
+  function sayHi(name){
+    console.log(`¡Hola, ${name}!`)
+  }
+  ````
 - **Funciones anónimas**: no disponen de declaración, solo de invocación. Usadas en un único contexto.
-
+  ````javascript
+  names.forEach(function(elm) => {
+     console.log(`¡Hola, ${elm}!`)
+  })
+  ````
+  
 A nivel de estructura, existen: 
 - **Function statement**: disponen de al palabra reservada `function`, de paréntesis para sus parámetros y de bloque:
   ````javascript
