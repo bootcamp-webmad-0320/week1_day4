@@ -1,5 +1,8 @@
 # week1_day4
 
+Vídeo de la clase disponible en [este enlace](https://zoom.us/rec/share/udx6fr7W7FlOWIHRxhqDQP54HoH0aaa8hCEfq6Jfnx5gFeySDkYNogI6oCaRBQmp)
+
+
 ## Contenidos
 
 > JS | Data types: number and string
